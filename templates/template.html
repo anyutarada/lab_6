@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подарки на НГ</title>
+</head>
+<body>
+    <table style="border: 1px solid #000">
+        <thead>
+            <tr>
+                {% for header in headers %}
+                    <th>{{header}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for gift in gifts %}
+                <tr>
+                    <td>{{gift[1]}}</td>
+                    <td>{{gift[2]}}</td>
+                    <td>{{gift[3]}}</td>
+                    <td>{{gift[4]}}</td>
+            {% endfor %}
+            </tbody>
+        </table>
+</body>
+</html>
